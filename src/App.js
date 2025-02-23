@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import ToDoList from "./ToDoList";  // Import the ToDoList component
 import "./styles.css";
 
 const App = () => {
@@ -14,10 +15,10 @@ const App = () => {
       <NavBar />
       <div className="container mt-4">
         <Routes>
-          {" "}
-          <Route path="/" element={<Home />} />{" "}
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/todolist" element={<ToDoList />} /> {/* Add the /todolist route */}
         </Routes>
       </div>
       <Footer />
